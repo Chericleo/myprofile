@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #6a1b9a; /* Purple */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+section h2 {
+    color: #6a1b9a;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+section ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+section ul li {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #6a1b9a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #6a1b9a;
+    color: #fff;
+}
