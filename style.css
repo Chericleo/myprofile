@@ -1,4 +1,4 @@
-{
+*{
     margin: 0;
     padding: 0;
     boxing-sizing: border-box;
@@ -11,7 +11,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 35px 12%
+    padding: 35px 12%;
     background: rgba(0,0,0,0.8);
     backdrop-filter: blur(10px);
     dispaly: flex;
@@ -27,7 +27,8 @@
 }
 .logo:hover{
     color: purpled;
-    text-shadow: 0 0 25px purpled, 0 0 50px purpled;
+    text-shadow: 0 0 25px purpled, 
+                 0 0 50px purpled;
     transform: scale(1.1);
 }
 span{
@@ -44,7 +45,7 @@ span{
 .navbar a:hover,
 .navbar a.active{
     color: purpled;
-    border-bottom:m3px solid purpled;
+    border-bottom: 3px solid purpled;
 }
 .contact{
     padding: 10px 28px;
@@ -75,7 +76,7 @@ span{
     max-width: 800px;
 }
 .home-content h3{
-    font-size: 42px
+    font-size: 42px;
 }
 .home-content h1{
     font-size: 62px;
@@ -245,6 +246,7 @@ span{
     font-size: 12px;
     color: white;
 }
+
 
 
 
