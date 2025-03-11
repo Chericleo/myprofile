@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
 }
@@ -15,16 +15,15 @@
 
 .navbar{
     width: 86%;
-    padding: 15px 0;
     display: flex;
+    padding: 15px 0;
     margin: auto;
-    justify-content: space-between;
     align-items: center;
-    
+    justify-content: space-between;      
 }
 
 .navbar.logo{
-    width: 20px;
+    width: 10px;
     cursor: pointer;
     margin-top: -3%;
     margin-left: -2%;
@@ -63,7 +62,7 @@ ul li a:hover{
     color: powderblue;
 }
 
-.info h3{
+.info h2{
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 24px;
@@ -90,19 +89,23 @@ ul li a:hover{
 
 .image{
     width: 30%;
-    height: 60%;
+    height: 40%;
     position: absolute;
     right: 100px;
     bottom: 0;
+    align-items: center;
+    
 }
 
 .image img{
     position: absolute;
-    height: 140%;
+    height: 160%;
     left: 40%;
     transform: translate(-55%);
     bottom: 0;
     transition: left 2s ease;
+    border-radius: 50%;
+    box-shadow: 0 0 25px purple, 0 0 50px purple;
 }
 
 .image:hover .girl{
@@ -115,7 +118,7 @@ ul li a:hover{
 }
 
 .icons ion-icon{
-    margin-right: 7%;
+    margin-left: 7%;
     color: #000;
     margin-right: -60px;
     font-size: 40px;  
@@ -124,6 +127,15 @@ ul li a:hover{
 .icons ion-icon:hover{
     color: blueviolet;
 }
+
+
+
+   
+
+   
+
+
+
 
 
 
