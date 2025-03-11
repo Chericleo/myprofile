@@ -1,43 +1,42 @@
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.main{
+    width: 100%
+    background: #000;
+    background-position: center;
+    height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background: #000;
-    color: white;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* Header */
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 12%;
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
+.navbar{
+    width: 86%;
+    padding: 15px 0;
     display: flex;
+    margin: auto;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
+    
 }
 
-.logo {
-    font-size: 25px;
-    color: white;
-    font-weight: 600;
+.navbar.logo{
+    width: 160px;
+    cursor: pointer;
+    margin-top: -3%;
+    margin-left: -2%;
 }
 
-.logo span {
-    color: purple;
+ul{
+    margin-top: -4%;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
 }
 
 .navbar a {
