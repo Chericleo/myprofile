@@ -1,46 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-   </head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cheric Leo - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
 <body>
-    
-    <div class="main">
-        <div class="navbar">
-            <img src="Debo.png" class="logo">
-            
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SKILLS</a></li>
-                <li><a href="#">MY WORK</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-         </div>
+  <main>
+    <aside>
+      <ul class="Links">
+        <li onclick="Navigate(0)" class="activeLink"><i class="fa-solid fa-house"></i>
+          <p>Home</p>
+        </li>
+        <li onclick="Navigate(1)"><i class="fa-solid fa-user"></i>
+          <p>About Me</p>
+        </li>
+        <li onclick="Navigate(2)"><i class="fa-solid fa-list"></i>
+          <p>Services</p>
+        </li>
+        <li onclick="Navigate(3)"><i class="fa-solid fa-images"></i>
+          <p>Gallery</p>
+        </li>
+        <li onclick="Navigate(4)"><i class="fa-solid fa-comments"></i>
+          <p>Contact Me</p>
+        </li>
+      </ul>
+    </aside>
 
-         <div class="info">
-            <h1>Hi, I'M <span> Deborah</span>.</h1>
-            <h2>Project manager, <span> Community manager and </span> <br>a solidity developer</h2>
-            <p>Okwor Deborah Chinaeme, <br>widely known as Cheric Leo or Little Me,  
-                <br>is a dynamic and accomplished community leader<br> and blockchain enthusiast.  
-                Her mission is to empower the<br> next generation of innovators 
-                and thought leaders <br>in the blockchain ecosystem.</p>
-            <a href="#">Hire Me</a>
+    <div class="swiper mySwiper">
+      <div class="SlideContainer swiper-wrapper">
+
+       
+        <div class="swiper-slide home-slide">
+          <div class="HomeContent">
+            <h1>Hi! I'm <span class="stylized-name">Cheric Leo</span>,</h1>
+            <h2>A <span class="professions">Web3 Community Builder</span></h2>
+            <p class="heroline">My Name is Okwor Deborah, widely known as Cheric Leo or Little Me.</p>
+            <div class="buttonGroup">
+              <button>Hire Me</button>
+              <button>Contact Me</button>
+            </div>
+          </div>
+          <div class="SideImg">
+            <div class="top-right-corner">
+              <hr class="hr1" />
+              <hr class="hr2" />
+            </div>
+            <img src="IMG_5681.jpg" alt="Profile image" />
+            <div class="bottom-left-corner">
+              <hr class="hr1" />
+              <hr class="hr2" />
+            </div>
+          </div>
+          <p class="slide-help">Scroll for next slide <i class="fa-solid fa-chevron-right fa-shake"></i></p>
         </div>
-        <div class="image">
-             <img src="IMG_5681.jpg" class="profile-image"> 
-            </div>
 
-            <div class="icons">
-                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <div class="swiper-slide">
+          <div class="about-us">
+            <h1 class="heading">About Me</h1>
+            <h3 class="sub-heading">I'm Cheric Leo, <span class="professions">A Web3 Community Builder</span></h3>
+            <p class="aboutme-details">
+              I'm a dynamic and accomplished community leader, and a blockchain enthusiast.<br />
+              My mission is to empower the next generation of innovators and thoughtful leaders <br /> in the blockchain ecosystem.
+            </p>
+            <div class="about-me-division">
+              <ul class="about-me-table">
+                <li><span>Experience:</span> 5+ years</li>
+                <li><span>Country:</span> Nigeria</li>
+                <li><span>Availability:</span> 24/7</li>
+                <li><span>Satisfied Clients:</span> 200+</li>
+                <li><span>Age:</span> 25</li>
+                <li><span>Phone:</span> +2347065309780</li>
+                <li><span>Language:</span> English</li>
+                <li><span>Degree:</span> BSc in Anatomy</li>
+              </ul>
+              <div class="buttonGroup">
+                <button>Hire Me</button>
+                <button>Contact Me</button>
+              </div>
+              <ul class="skill-bar">
+                <li>
+                  <p>Project Management</p>
+                  <div class="bar"><div class="active-bar" style="width:99%"></div></div>
+                </li>
+                <li>
+                  <p>Community Management</p>
+                  <div class="bar"><div class="active-bar" style="width:80%"></div></div>
+                </li>
+                <li>
+                  <p>Web3 Event Planner</p>
 
+<div class="bar"><div class="active-bar" style="width:85%"></div></div>
+                </li>
+                <li>
+                  <p>Solidity Developer</p>
+                  <div class="bar"><div class="active-bar" style="width:50%"></div></div>
+                </li>
+                <li>
+                  <p>Web Developer</p>
+                  <div class="bar"><div class="active-bar" style="width:60%"></div></div>
+                </li>
+              </ul>
             </div>
+          </div>
+        </div>
+
+        
+        <div class="swiper-slide services">
+          <h1 class="heading">Services</h1>
+          <div class="service"><div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h2>Community Management</h2>
+            <p>I have managed over 10 Web3 communities, growing them from small to large.</p>
+          </div>
+          <div class="service"><div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+            <h2>Project Management</h2>
+            <p>I have led and managed multiple Web3 community-based projects.</p>
+          </div>
+          <div class="service"><div class="service-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <h2>Solidity Developer</h2>
+            <p>Graduated from Borderless Cypher Session as a Blockchain Developer.</p>
+          </div>
+          <div class="service"><div class="service-icon"><i class="fa-solid fa-image"></i></div>
+            <h2>Web3 Event Planner</h2>
+            <p>Planned and organized over 20+ Web3 events for projects and communities.</p>
+          </div>
+          <div class="service"><div class="service-icon"><i class="fa-solid fa-database"></i></div>
+            <h2>Marketer</h2>
+            <p>Currently working as an intern marketer at iPayBTC.</p>
+          </div>
+        </div>
+
+        
+        <div class="swiper-slide contactMe">
+          <h1 class="heading">Contact Me</h1>
+          <div class="contactinfo"><i class="fa-solid fa-phone"></i>
+            <h3>Mobile No</h3>
+            <p>+2347065309780</p>
+          </div>
+          <div class="contactinfo"><i class="fa-solid fa-location-dot"></i>
+            <h3>Location</h3>
+            <p>Somewhere On Earth</p>
+          </div>
+          <div class="contactinfo"><i class="fa-regular fa-envelope"></i>
+            <h3>Email</h3>
+            <p>chinaemedeborah1@gmail.com</p>
+          </div>
+          <div class="contactinfo"><i class="fa-solid fa-globe"></i>
+            <h3>Website</h3>
+            <p><a href="https://x.com/Cheric_Leo" target="_blank">https://x.com/Cheric_Leo</a></p>
+          </div>
+
+          <form>
+            <h2>Send Me A Message</h2>
+            <div class="SocialLinks">
+              <i class="fa-brands fa-codepen"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+            <textarea rows="10" placeholder="Type your message here..." required></textarea>
+            <button class="primary">Send</button>
+          </form>
+
+          <footer>
+            <li>Copyright © 2025 Cheric Leo.</li>
+          </footer>
+        </div>
+
+      </div>
     </div>
-
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    </body>
-    </html>
-   
+  </main>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      direction: "horizontal",
+      loop: false,
+      spaceBetween: 30,
+      slidesPerView: 1,
+    });
+  </script>
+</body>
+</html>
