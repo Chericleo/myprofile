@@ -1,3 +1,4 @@
+> Cheric Leo:
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,122 +7,176 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cheric Leo - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  
 </head>
 <body>
   <main>
-    <aside class="sidebar">
-      <ul class="nav-links">
-        <li onclick="Navigate(0)" class="active"><i class="fa-solid fa-house"></i><span>Home</span></li>
-        <li onclick="Navigate(1)"><i class="fa-solid fa-user"></i><span>About Me</span></li>
-        <li onclick="Navigate(2)"><i class="fa-solid fa-list"></i><span>Services</span></li>
-        <li onclick="Navigate(3)"><i class="fa-solid fa-images"></i><span>Gallery</span></li>
-        <li onclick="Navigate(4)"><i class="fa-solid fa-comments"></i><span>Contact</span></li>
+    <aside>
+      <ul class="Links">
+        <li onclick="Navigate(0)" class="activeLink"><i class="fa-solid fa-house"></i>
+          <p>Home</p>
+        </li>
+        <li onclick="Navigate(1)"><i class="fa-solid fa-user"></i>
+          <p>About Me</p>
+        </li>
+        <li onclick="Navigate(2)"><i class="fa-solid fa-list"></i>
+          <p>Services</p>
+        </li>
+        <li onclick="Navigate(3)"><i class="fa-solid fa-images"></i>
+          <p>Gallery</p>
+        </li>
+        <li onclick="Navigate(4)"><i class="fa-solid fa-comments"></i>
+          <p>Contact Me</p>
+        </li>
       </ul>
     </aside>
 
     <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
+      <div class="SlideContainer swiper-wrapper">
 
         <!-- Home Slide -->
-        <section class="swiper-slide home-slide">
-          <div class="home-content">
-            <h1>Hello, I'm <span class="highlight">Cheric Leo</span></h1>
-            <h2>Web3 Community Builder</h2>
-            <p>I'm Okwor Deborah, known as Cheric Leo or Little Me. I specialize in building strong Web3 communities and leading impactful blockchain initiatives.</p>
-            <div class="buttons">
-              <button class="btn primary">Hire Me</button>
-              <button class="btn secondary">Contact</button>
+        <div class="swiper-slide home-slide">
+          <div class="HomeContent">
+            <h1>Hi! I'm <span class="stylized-name">Cheric Leo</span>,</h1>
+            <h2>A <span class="professions">Web3 Community Builder</span></h2>
+            <p class="heroline">My Name is Okwor Deborah, widely known as Cheric Leo or Little Me.</p>
+            <div class="buttonGroup">
+              <button>Hire Me</button>
+              <button>Contact Me</button>
             </div>
           </div>
-          <div class="image-container">
-            <img src="IMG_5681.jpg" alt="Cheric Leo" />
+          <div class="SideImg">
+            <div class="top-right-corner">
+              <hr class="hr1" />
+              <hr class="hr2" />
+            </div>
+            <img src="IMG_5681.jpg" alt="Profile image" />
+            <div class="bottom-left-corner">
+              <hr class="hr1" />
+              <hr class="hr2" />
+            </div>
           </div>
-        </section>
+          <p class="slide-help">Scroll for next slide <i class="fa-solid fa-chevron-right fa-shake"></i></p>
+        </div>
 
-        <!-- About Slide -->
-        <section class="swiper-slide about-slide">
-          <div class="about-section">
-            <h1>About Me</h1>
-            <p>I am a passionate Web3 Community Builder with over 5 years of experience in blockchain leadership, event planning, and development.</p>
-            <ul class="details">
-              <li><strong>Experience:</strong> 5+ years</li>
-              <li><strong>Location:</strong> Nigeria</li>
-              <li><strong>Available:</strong> 24/7</li>
-              <li><strong>Clients:</strong> 200+</li>
-              <li><strong>Phone:</strong> +2347065309780</li>
-              <li><strong>Email:</strong> chinaemedeborah1@gmail.com</li>
-              <li><strong>Degree:</strong> BSc in Anatomy</li>
-            </ul>
-            <div class="skills">
-              <div><p>Project Management</p><div class="progress"><div class="bar" style="width: 99%"></div></div></div>
-              <div><p>Community Management</p><div class="progress"><div class="bar" style="width: 80%"></div></div></div>
-              <div><p>Solidity Development</p><div class="progress"><div class="bar" style="width: 50%"></div></div></div>
-              <div><p>Web Development</p><div class="progress"><div class="bar" style="width: 60%"></div></div></div>
+        <!-- About Me Slide -->
+        <div class="swiper-slide">
+          <div class="about-us">
+            <h1 class="heading">About Me</h1>
+            <h3 class="sub-heading">I'm Cheric Leo, <span class="professions">A Web3 Community Builder</span></h3>
+            <p class="aboutme-details">
+              I'm a dynamic and accomplished community leader, and a blockchain enthusiast.<br />
+              My mission is to empower the next generation of innovators and thoughtful leaders <br /> in the blockchain ecosystem.
+            </p>
+            <div class="about-me-division">
+              <ul class="about-me-table">
+                <li><span>Experience:</span> 5+ years</li>
+                <li><span>Country:</span> Nigeria</li>
+                <li><span>Availability:</span> 24/7</li>
+                <li><span>Satisfied Clients:</span> 200+</li>
+                <li><span>Age:</span> 25</li>
+                <li><span>Phone:</span> +2347065309780</li>
+                <li><span>Language:</span> English</li>
+                <li><span>Degree:</span> BSc in Anatomy</li>
+              </ul>
+              <div class="buttonGroup">
+                <button>Hire Me</button>
+                <button>Contact Me</button>
+              </div>
+              <ul class="skill-bar">
+                <li>
+                  <p>Project Management</p>
+                  <div class="bar"><div class="active-bar" style="width:99%"></div></div>
+                </li>
+                <li>
+                  <p>Community Management</p>
+                  <div class="bar"><div class="active-bar" style="width:80%"></div></div>
+                </li>
+                <li>
+                  <p>Web3 Event Planner</p>
+
+> Cheric Leo:
+<div class="bar"><div class="active-bar" style="width:85%"></div></div>
+                </li>
+                <li>
+                  <p>Solidity Developer</p>
+                  <div class="bar"><div class="active-bar" style="width:50%"></div></div>
+                </li>
+                <li>
+                  <p>Web Developer</p>
+                  <div class="bar"><div class="active-bar" style="width:60%"></div></div>
+                </li>
+              </ul>
             </div>
           </div>
-        </section>
+        </div>
 
         <!-- Services Slide -->
-        <section class="swiper-slide services-slide">
-          <h1>My Services</h1>
-          <div class="services-container">
-            <div class="service-card"><i class="fa-solid fa-pen-ruler"></i><h3>Community Management</h3><p>Led 10+ Web3 communities to success.</p></div>
-            <div class="service-card"><i class="fa-solid fa-globe"></i><h3>Project Management</h3><p>Oversaw multiple Web3 initiatives.</p></div>
-            <div class="service-card"><i class="fa-solid fa-code"></i><h3>Solidity Developer</h3><p>Graduated from Borderless Cypher Sessions.</p></div>
-            <div class="service-card"><i class="fa-solid fa-calendar-check"></i><h3>Event Planning</h3><p>Organized 20+ major events.</p></div>
-            <div class="service-card"><i class="fa-solid fa-bullhorn"></i><h3>Marketing</h3><p>Marketing intern at iPayBTC.</p></div>
+        <div class="swiper-slide services">
+          <h1 class="heading">Services</h1>
+          <div class="service"><div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h2>Community Management</h2>
+            <p>I have managed over 10 Web3 communities, growing them from small to large.</p>
           </div>
-        </section>
+          <div class="service"><div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+            <h2>Project Management</h2>
+            <p>I have led and managed multiple Web3 community-based projects.</p>
+          </div>
+          <div class="service"><div class="service-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <h2>Solidity Developer</h2>
+            <p>Graduated from Borderless Cypher Session as a Blockchain Developer.</p>
+          </div>
+          <div class="service"><div class="service-icon"><i class="fa-solid fa-image"></i></div>
+            <h2>Web3 Event Planner</h2>
+            <p>Planned and organized over 20+ Web3 events for projects and communities.</p>
+          </div>
+          <div class="service"><div class="service-icon"><i class="fa-solid fa-database"></i></div>
+            <h2>Marketer</h2>
+            <p>Currently working as an intern marketer at iPayBTC.</p>
+          </div>
+        </div>
 
-        <!-- Contact Slide -->
-        <section class="swiper-slide contact-slide">
-          <h1>Contact Me</h1>
-          <div class="contact-info">
-            <p><i class="fa-solid fa-phone"></i> +2347065309780</p>
-            <p><i class="fa-solid fa-envelope"></i> chinaemedeborah1@gmail.com</p>
-            <p><i class="fa-solid fa-location-dot"></i> Somewhere on Earth</p>
-            <p><i class="fa-solid fa-globe"></i> <a href="https://x.com/Cheric_Leo" target="_blank">x.com/Cheric_Leo</a></p>
+        <!-- Contact Me Slide -->
+        <div class="swiper-slide contactMe">
+          <h1 class="heading">Contact Me</h1>
+          <div class="contactinfo"><i class="fa-solid fa-phone"></i>
+            <h3>Mobile No</h3>
+            <p>+2347065309780</p>
           </div>
-          <form class="contact-form">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message" rows="6" required></textarea>
-            <button type="submit" class="btn primary">Send Message</button>
+          <div class="contactinfo"><i class="fa-solid fa-location-dot"></i>
+            <h3>Location</h3>
+            <p>Somewhere On Earth</p>
+          </div>
+          <div class="contactinfo"><i class="fa-regular fa-envelope"></i>
+            <h3>Email</h3>
+            <p>chinaemedeborah1@gmail.com</p>
+          </div>
+          <div class="contactinfo"><i class="fa-solid fa-globe"></i>
+            <h3>Website</h3>
+            <p><a href="https://x.com/Cheric_Leo" target="_blank">https://x.com/Cheric_Leo</a></p>
+          </div>
+
+          <form>
+            <h2>Send Me A Message</h2>
+            <div class="SocialLinks">
+              <i class="fa-brands fa-codepen"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+            <textarea rows="10" placeholder="Type your message here..." required></textarea>
+            <button class="primary">Send</button>
           </form>
+
           <footer>
-            <p>&copy; 2025 Cheric Leo. All rights reserved.</p>
+            <li>Copyright © 2025 Cheric Leo.</li>
           </footer>
-        </section>
+        </div>
 
       </div>
     </div>
   </main>
-
-  <script>
-    const swiper = new Swiper(".mySwiper", {
-      direction: "horizontal",
-      loop: false,
-      spaceBetween: 30,
-      slidesPerView: 1,
-      simulateTouch: true,
-    });
-
-    function Navigate(index) {
-      swiper.slideTo(index);
-      document.querySelectorAll(".nav-links li").forEach((el, i) => {
-        el.classList.toggle("active", i === index);
-      });
-    }
-  </script>
 </body>
 </html>
-      
-
-                
-            
-         
-           
-          
-      
